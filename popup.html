@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RUTECH</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	::-webkit-scrollbar{
+            width: 10px;
+            
+        }
+    ::-webkit-scrollbar-track{
+            width: 10px;
+            border-radius: 40px;
+            
+            box-shadow:inset 2px 2px 5px black;
+            background-color: #f5f5f5;
+  
+        }
+::-webkit-scrollbar-thumb{
+            width: 10px;
+            border-radius: 50%px;
+           height: 10px;
+
+            background-image: linear-gradient(red,blue);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(red,blue);
+}
+    ::-webkit-scrollbar-corner{
+            background-color: black;
+        }
+ 
+        .container {
+            height: 550px;
+            width: 600px;
+         
+            border-radius: 2px;
+            border: 2px solid rebeccapurple;
+            overflow: auto;
+            margin-bottom: 100px;
+            border-radius: 10px;
+        }
+
+        .header {
+            height: 150px;
+            background-color: deepskyblue;
+            position: relative;
+        }
+
+        .text {
+            padding: 20px;
+        }
+
+        .input {
+            padding-left: 50px;
+        }
+
+        .input input {
+            position: absolute;
+            top: 90px;
+            left: 30px;
+            height: 30px;
+            width: 300px;
+
+        }
+
+        .submit {
+
+            position: absolute;
+            right: 50px;
+            top: 90px;
+            height: 37px;
+            font-weight: 900;
+            text-transform: capitalize;
+            width: 100px;
+            font-size: 20px;
+            border: 2px solid black;
+            color: black;
+            background-color: yellow;
+        }
+        .project{
+            background-color: deeppink;
+            width: 100%;
+            height:400px;
+           position: relative;
+        }
+        .project h1{
+            font-size: 60px;
+            font-weight: 800;
+            color: black;
+            position: absolute;
+            top:100px;
+            left:450px;
+            animation-name:project;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+
+        }
+        @keyframes project {
+            
+            0%{
+                position: absolute;
+                top:0px;
+            }
+            100%{
+                position:absolute;
+                top:150px;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+
+
+            .container {
+            height: 400px;
+            width: 350px;
+            transform: translate(10%, 10%);
+            border-radius: 2px;
+            border: 2px solid rebeccapurple;
+            overflow: auto;
+            
+            border-radius: 10px;
+            margin-top: 150px;
+        }
+
+        .header {
+            height: 150px;
+            background-color: deepskyblue;
+            position: relative;
+        }
+
+        .text {
+            padding: 20px;
+        }
+
+        .input {
+            padding-left: 50px;
+        }
+
+        .input input {
+            position: absolute;
+            top: 90px;
+            left: 30px;
+            height: 30px;
+            width: 240px;
+
+        }
+
+        .submit {
+
+            position: absolute;
+            right: 50px;
+            top: 90px;
+            height: 37px;
+            font-weight: 900;
+            text-transform: capitalize;
+            width: 100px;
+            font-size: 20px;
+            border: 2px solid black;
+            color: black;
+            background-color: yellow;
+        }
+        .project{
+            background-color: deeppink;
+            width:120%;
+            height:300px;
+           position: relative;
+        }
+        .project h1{
+            font-size: 40px;
+            font-weight: 800;
+            color: Black;
+            position: absolute;
+            top:100px;
+            left:100px;
+            animation-name:project;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+
+        }
+        
+        }
+    </style>
+	
+</head>
+<body style="width: 400px;border: 2px solid black; padding:10px;background-color: purple; ">
+	<h1 style="color:white;">RUTECH ALL RIGHTS RESERVED</h1>
+ <div  class="container" style="background-color: ghostwhite; margin-top: -40px;" >
+        <div class="header">
+            <div class="text">
+                <h1>
+                    MY TO DO LIST
+                </h1>
+            </div>
+            <div class="input">
+                <input type="text" id="input" placeholder="Title of todo list" >
+                <button class="submit" id="ids">
+                    ADD
+                </button>
+            </div>
+
+        </div>
+        <div class="values" id="values">
+
+        </div>
+
+    </div>
+
+
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
